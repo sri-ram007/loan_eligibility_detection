@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Loan Eligibility Detection System</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section Styles */
+        #about {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #about h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        #about h2 {
+            font-size: 28px;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        #about p {
+            font-size: 18px;
+            margin: 15px 0;
+            line-height: 1.8;
+        }
+
+        #about ul {
+            list-style: none;
+            text-align: left;
+            margin: 20px auto;
+            padding: 0;
+            max-width: 600px;
+        }
+
+        #about ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        #about ul li strong {
+            color: #4CAF50;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h1>Welcome to the Loan Eligibility Detection System</h1>
+            <p>Our Loan Eligibility Detection System is designed to help individuals quickly determine if they are eligible for a loan based on key financial information. By assessing factors such as income, credit score, and employment status, our system provides real-time feedback on your eligibility and guides you to the right loan options.</p>
+
+            <h2>How It Works</h2>
+            <p>Our system evaluates basic financial details such as:</p>
+            <ul>
+                <li><strong>Monthly Income</strong>: Helps us understand your financial stability.</li>
+                <li><strong>Credit Score</strong>: A key factor in assessing loan eligibility.</li>
+                <li><strong>Employment Status</strong>: Determines your job security and ability to repay loans.</li>
+            </ul>
+
+            <h2>Why Use Our System?</h2>
+            <p>Using our system is easy, fast, and free. You can check your eligibility at any time, without the need for personal consultations or paperwork. The system helps you plan your finances better and decide which loan options are best suited for your needs.</p>
+
+            <p>Ready to check your loan eligibility? Get started now!</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Loan Eligibility Detection System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

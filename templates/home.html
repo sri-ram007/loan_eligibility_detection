@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loan Eligibility Detection</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-image: url("{{url_for('static',filename='back.jpg')}}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .navbar {
+        background-color: whitesmoke;
+      }
+
+      .nav-item {
+        margin-left: 200px;
+      }
+
+      .navbar-brand, .nav-link {
+        color: green;
+      }
+
+      .navbar-brand:hover, .nav-link:hover {
+        color: black;
+      }
+
+      .custom-color {
+        color: blue;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 90vh;
+        margin: 0;
+      }
+
+      .container {
+        background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+        padding: 30px;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 900px;
+        border-radius: 15px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+      }
+
+      .container h3 {
+        color: #007bff; /* Attractive heading color */
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .container p {
+        color: #333; /* Dark text for readability */
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+
+      .btn-learn-more {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-learn-more:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><p class="custom-color">Loan Eligibility Detection</p></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('form') }}">Eligibility</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('About') }}">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="container">
+        <h3>Secured Loans</h3>
+        <p>Secured loans are loans that require you to pledge an asset as collateral. When you opt for such a loan, you essentially offer something valuable as collateral, like your home or car. This collateral acts as a safety net for the bank. If you can’t repay the loan, the lender can take over your asset.</p>
+        <p>Secured loans usually have lower interest rates and higher borrowing limits than unsecured loans. Some examples include home loans, auto loans, etc.</p>
+        
+        <h3>Unsecured Loans</h3>
+        <p>Unsecured loans are like a financial handshake based on trust. Here, you don’t need to put up any collateral. The lender assesses your credit score and income to determine your eligibility.</p>
+        <p>Unsecured loans usually have higher interest rates and lower borrowing limits than secured loans, but they do not put your assets at risk. Credit cards and personal loans are classic examples of unsecured loans.</p>
+        
+        <a href="#" class="btn-learn-more">Learn More</a>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

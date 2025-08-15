@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("{{ url_for('static',filename='textview.jpg')}}");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #layout {
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 50px auto;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .btn-primary {
+            width: 100%;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="layout" class="container">
+        <h2>Loan Eligibility Form</h2>
+        <form action="/check_eligibility" method="POST">
+            <div class="form-group">
+                <label for="age">Enter Age</label>
+                <input type="number" class="form-control" id="age" name="age" placeholder="Age" required>
+            </div>
+            <div class="form-group">
+                <label for="income">Enter Income</label>
+                <input type="number" class="form-control" id="income" name="income" placeholder="Income" required>
+            </div>
+            <div class="form-group">
+                <label for="credit_score">Enter Credit Score</label>
+                <input type="number" class="form-control" id="credit_score" name="credit_score" placeholder="Credit Score (300-900)" required>
+            </div>
+            <div class="form-group">
+                <label for="loan_amount">Enter Loan Amount</label>
+                <input type="number" class="form-control" id="loan_amount" name="loan_amount" placeholder="Loan Amount " required>
+            </div>
+            <button type="submit" class="btn btn-primary">Check Eligibility</button>
+        </form>
+    </div>
+</body>
+</html>
