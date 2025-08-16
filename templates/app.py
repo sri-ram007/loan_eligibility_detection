@@ -33,7 +33,7 @@ def check_eligibility():
         else:
             message = "Sorry, you are not eligible for the loan."
 
-        return render_template("result.html", message=message)
+        return render_template("Result.html", message=message)
     except Exception as e:
         return f"An error occurred: {e}"
 
